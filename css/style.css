@@ -1,0 +1,26 @@
+body {
+    text-align: right;
+    background-color: #ededed;
+    width: 175px;
+}
+
+h1 {
+    font-size: 15px;
+    text-align: left;
+}
+
+#phoneNumber {
+    margin-top: 6px;
+    border-radius: 5px;
+    border-width: 1px;
+    padding: 3px 5px;
+    width: 100px;
+    vertical-align: top;
+}
+
+#startMessage {
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+    width: 50px;
+}
