@@ -20,7 +20,8 @@ async function sendMessage() {
 
     var tab = await openWhatsAppTab();
     console.log(tab);
-    await chrome.tabs.update(tab.id, { url: WHATSAPP_URL + phoneNumber });
+    await chrome.tabs.update(tab.id, { url: WHATSAPP_URL + phoneNumber, active: true });
+    window.close();
 }
 
 async function openWhatsAppTab() {
