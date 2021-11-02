@@ -4,6 +4,14 @@ startMessage.addEventListener('click', async () => {
     await sendMessage();
 });
 
+phoneNumber.focus();
+phoneNumber.addEventListener("keydown", (event) => {
+    let keyPressed = event.keyCode || event.which;
+    if (keyPressed === 13) {
+        sendMessage();
+    }
+});
+
 async function sendMessage() {
     var phoneNumber = document.getElementById('phoneNumber').value;
     if (phoneNumber.lenght < 10) {
